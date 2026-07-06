@@ -7,6 +7,44 @@ nav.floating {
     background-color: #d0d0d0;
 }
 
+.header-site-menu{
+    position: fixed;
+    top: 0;
+    left: -250px;      /* 最初は画面外 */
+    width: 250px;
+    height: 100%;
+    background: #222;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.header-site-menu.open{
+    left: 0;           /* 左から出てくる */
+}
+
+.site-menu ul{
+    list-style: none;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.site-menu li{
+    padding: 20px;
+}
+
+.site-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.toggle-menu-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
 .first-view {
     height: calc(100vh - 110px);
     background-image: url(../images/index/bg_main.jpg);
