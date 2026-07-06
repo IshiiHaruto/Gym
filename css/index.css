@@ -45,6 +45,19 @@ nav.floating {
     z-index: 1100;
 }
 
+.toggle-menu-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggle-menu-button img{
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
 .first-view {
     height: calc(100vh - 110px);
     background-image: url(../images/index/bg_main.jpg);
