@@ -43,9 +43,6 @@ nav.floating {
     top: 20px;
     left: 20px;
     z-index: 1100;
-}
-
-.toggle-menu-button{
     background: none;
     border: none;
     cursor: pointer;
@@ -53,14 +50,14 @@ nav.floating {
 }
 
 .toggle-menu-button img{
-    width: 50px;
+    width: 70px;
     height: auto;
     display: block;
 }
 
 .first-view {
     height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
+    background-image: url(../images/index/logo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -73,7 +70,7 @@ nav.floating {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40ox;
+    padding-left: 40px;
     padding-bottom: 80px;
     color: #ffffff;
     font-weight: bold;
@@ -137,10 +134,11 @@ img {
     align-items: center;
 }
 
+/*
 .toggle-menu-button {
     display: none;
 }
-
+*/
 .header-logo {
     display: block;
     width: 170px;
@@ -186,23 +184,6 @@ img {
         height: 100%;
         position: relative;
     }
-
-    .header-site-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        color: #ffffff;
-        background-color: #736e62;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        display: none;
-    }
-
-    .header-site-menu.is-show {
-        display: block;
-    }
-
     .header-logo {
         width: 100px;
     }
@@ -219,19 +200,10 @@ img {
         margin-top: 50px;
     }
 
-    .toggle-menu-button {
-        display: block;
-        width: 44px;
-        height: 34px;
-        background-image: url(../images/common/icon-menu.png);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        outline: none;
-    }
+    .toggle-menu-button img{
+    width:50px;
+    height:auto;
+}
 }
 .footer {
     color: #ffffff;
