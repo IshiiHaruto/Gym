@@ -42,7 +42,7 @@ nav.floating {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1100;
+    z-index: 9999;
     background: none;
     border: none;
     cursor: pointer;
