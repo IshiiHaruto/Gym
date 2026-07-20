@@ -12,8 +12,10 @@ nav.floating {
     margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
+
+    background-color: #b6fbacc1;
 }
 .lead {
     text-align: center;
@@ -70,8 +72,6 @@ img {
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 50px;
-
-    background-color: #aqua;
 }
 
 .header{
@@ -97,10 +97,6 @@ img {
     display: block;
     height: 110px;
 }
-.header-logo-image{
-    height: 110px;
-    width: 990px;
-}
 
 .toggle-menu-button {
     display: none;
@@ -118,47 +114,39 @@ img {
 }
 
 
-
-/*.main{
-    background-color: #aqua;
-}
-body{
-    background-image: url("../images/rules/cat-type_00.jpg");
-}*/
-
-
-
 @media (max-width: 800px) {
     .site-menu ul {
         
         display: block;
         text-align: center;
     }
-
     .site-menu li {
         margin-top: 20px;
     }
 
+    .rules{
+        margin-top:100px;
+    }
+    
     .header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background-color: #ffffff;
-        height: 50px;
+        
+        min-height: 150px;
+
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
-
     .header-inner {
         padding-left: 20px;
         padding-right: 20px;
         height: 100%;
         position: relative;
     }
-
     .header-site-menu {
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 0;
         right: 0;
@@ -168,13 +156,12 @@ body{
         padding-bottom: 50px;
         display: none;
     }
-
     .header-site-menu.is-show {
         display: block;
     }
-
     .header-logo {
         width: 100px;
+        height: auto;
     }
 
     .main {
