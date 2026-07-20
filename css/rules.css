@@ -70,8 +70,16 @@ img {
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 50px;
+
+    background-color: #aqua;
 }
 
+.header{
+    background-image: url('../images/rules/header.jpg');
+    background-size: cover;       /* 領域いっぱいに画像を引き伸ばす */
+    background-position: center;  /* 画像の中央を表示 */
+    padding: 20px 0;
+}
 .header-inner {
     max-width: 1200px;
     height: 110px;
@@ -87,7 +95,11 @@ img {
 }
 .header-logo {
     display: block;
-    margin: auto auto;
+    height: 110px;
+}
+.header-logo-image{
+    height: 110px;
+    width: 990px;
 }
 
 .toggle-menu-button {
@@ -107,8 +119,18 @@ img {
 
 
 
+/*.main{
+    background-color: #aqua;
+}
+body{
+    background-image: url("../images/rules/cat-type_00.jpg");
+}*/
+
+
+
 @media (max-width: 800px) {
     .site-menu ul {
+        
         display: block;
         text-align: center;
     }
@@ -156,7 +178,7 @@ img {
     }
 
     .main {
-        padding-top: 50px;;
+        padding-top: 50px;
     }
 
     .footer-logo {
