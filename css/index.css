@@ -1,12 +1,6 @@
 @charset "utf-8";
 
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #d0d0d0;
-}
-
+/*ボタンで生える*/
 .header-site-menu{
     position: fixed;
     top: 0;
@@ -17,7 +11,7 @@ nav.floating {
     transition: 0.3s;
     z-index: 1000;
 }
-
+/*ボタンで生える*/
 .header-site-menu.open{
     left: 0;           /* 左から出てくる */
 }
@@ -32,18 +26,20 @@ nav.floating {
     padding: 20px;
 }
 
+/*生えてくるメニューないの文字*/
 .site-menu a{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
+/*生えてくるメニューないの文字*/
 .toggle-menu-button{
     position: fixed;
     top: 20px;
     left: 20px;
     z-index: 9999;
-    background: none;
+    background-color: transparent !important;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -55,16 +51,17 @@ nav.floating {
     display: block;
 }
 
+/*画面の一番上の表示*/
 .first-view {
     height: calc(100vh - 110px);
-    background-image: url(../images/index/logo.jpg);
+    background-image: url(../images/index/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
 }
-
+/*画面の一番上のテキスト*/
 .first-view-text {
     width: 100%;
     max-width: 1200px;
@@ -72,17 +69,18 @@ nav.floating {
     margin-right: auto;
     padding-left: 40px;
     padding-bottom: 80px;
-    color: #ffffff;
+    color: #fff700;
     font-weight: bold;
-    text-shadow: 1px 1px 10px #4b2c14;
+    text-shadow: 1px 1px 10px #ff5500;
 }
 
+/*画面の一番上のテキスト（でっかいの）*/
 .first-view-text h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 56px;
+    font-size: 72px;
     line-height: 72px;
 }
-
+/*画面の一番上のテキスト（ちっさいの）*/
 .first-view-text p {
     font-size: 18px;
     margin-top: 20px;
@@ -134,11 +132,6 @@ img {
     align-items: center;
 }
 
-/*
-.toggle-menu-button {
-    display: none;
-}
-*/
 .header-logo {
     display: block;
     width: 170px;
