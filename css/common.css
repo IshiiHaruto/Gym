@@ -1,42 +1,42 @@
 @charset "utf-8";
-/* ==========================
-   Reset
-========================== */
 
+/* ==========================
+    Reset
+========================== */
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-ul,
-ol {
-    list-style: none;
+ul,ol {
+    list-style:none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+    color:inherit;
+    text-decoration:none;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16pt;
-    color: #000;
-    line-height: 1;
-    background: #fff;
+    font-family:sans-serif;
+    font-size:16pt;
+    color:#000;
+    line-height:1;
+    background:#fff;
 }
 
 img {
-    max-width: 100%;
+    max-width:100%;
 }
+
 /* ==========================
-   Header
+   Header パソコン
 ========================== */
 
-/* PCでは非表示 */
+/* ハンバーガー非表示 */
 .toggle-menu-button{
     display:none;
 }
@@ -47,123 +47,61 @@ img {
     height:110px;
     margin:0 auto;
     padding:0 40px;
-    display:flex;
-    justify-content:space-between;
+
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
     align-items:center;
 }
 
-.header-logo{
-    display:block;
-    width:170px;
+/* 左メニュー */
+.header-left{
+    justify-self:start;
 }
 
-.site-menu ul{
+.header-left ul{
     display:flex;
 }
 
-.site-menu li{
-    margin:0 20px;
+.header-left li{
+    margin-right:20px;
 }
 
-.site-menu a{
+/* ロゴ */
+.header-logo{
+    width:170px;
+    justify-self:center;
+}
+
+.header-logo img{
+    display:block;
+    width:100%;
+}
+
+/* 右メニュー */
+.header-right{
+    justify-self:end;
+}
+
+.header-right ul{
+    display:flex;
+}
+
+.header-right li{
+    margin-left:20px;
+}
+
+.header-left a,
+.header-right a{
     font-family:'Cherry Bomb One', cursive;
 }
 
-/* ==========================
-   スマホ表示
-========================== */
-
-@media (max-width:800px){
-
-    /* ヘッダー */
-    .header{
-        position:fixed;
-        top:0;
-        left:0;
-        right:0;
-        height:50px;
-        background:#fff;
-        z-index:2000;
-        box-shadow:0 3px 6px rgba(0,0,0,.1);
-    }
-
-    .header-inner{
-        height:100%;
-        padding:0 20px;
-        position:relative;
-    }
-
-    .header-logo{
-        width:100px;
-    }
-
-    .main{
-        padding-top:50px;
-    }
-
-    /* ハンバーガーボタン */
-    .toggle-menu-button{
-        display:block;
-        position:fixed;
-        top:20px;
-        left:20px;
-        z-index:9999;
-        background:transparent;
-        border:none;
-        cursor:pointer;
-        padding:0;
-    }
-
-    /* ハンバーガー画像 */
-    .toggle-menu-button img{
-        width:50px;
-        height:auto;
-        display:block;
-    }
-
-    /* メニュー本体 */
-    .header-site-menu{
-        position:fixed;
-        top:0;
-        left:-250px;
-        width:250px;
-        height:100%;
-        background:#222;
-        transition:0.3s;
-        z-index:1000;
-    }
-
-    /* 開いた状態 */
-    .header-site-menu.open{
-        left:0;
-    }
-
-    /* メニューリスト */
-    .header-site-menu .site-menu ul{
-        display:block;
-        list-style:none;
-        margin-top:100px;
-        padding:0;
-        text-align:center;
-    }
-
-    /* メニュー項目 */
-    .header-site-menu .site-menu li{
-        margin:0;
-        padding:20px;
-    }
-
-    /* メニュー文字 */
-    .header-site-menu .site-menu a{
-        color:#fff;
-        text-decoration:none;
-        font-size:20px;
-    }
-
+/* PCではスマホメニュー非表示 */
+.header-site-menu{
+    display:none;
 }
 
 /* ==========================
-   Footer
+    Footer パソコン
 ========================== */
 
 .footer{
@@ -176,11 +114,11 @@ img {
     align-items:center;
 }
 
+
 /* フッターメニュー */
 .footer .site-menu ul{
     display:flex;
 }
-
 .footer .site-menu li{
     margin:0 20px;
 }
@@ -192,9 +130,81 @@ img {
     margin-top:90px;
 }
 
-/* フッター スマホ */
-@media (max-width:800px){
 
+
+/* ===============
+    スマホ表示
+=============== */
+
+@media(max-width:800px){
+/* ===================
+    Header スマホ
+=================== */
+
+    /* PCメニュー非表示 */
+    .header-left,
+    .header-right{
+        display:none;
+    }
+
+.header-logo{
+    width:150px;
+    margin:0 auto;
+}
+    /* ハンバーガーボタン表示 */
+    .toggle-menu-button{
+        display:block;
+        position:fixed;
+        top:20px;
+        left:20px;
+        width:50px;
+        height:50px;
+        border:none;
+        background:transparent;
+        padding:0;
+        z-index:9999;
+    }
+
+    .toggle-menu-button img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+    }
+
+    /* スマホメニュー */
+    .header-site-menu{
+        display:block;
+        position:fixed;
+        top:0;
+        left:-300px;
+        width:250px;
+        height:100vh;
+        background:#24211b;
+        transition:0.3s;
+        z-index:9998;
+    }
+
+    /* JSで追加されるクラス */
+    .header-site-menu.open{
+        left:0;
+    }
+
+    /* メニュー文字 */
+    .header-site-menu .site-menu ul{
+        display:block;
+        padding-top:100px;
+        text-align:center;
+    }
+
+
+    .header-site-menu .site-menu li{
+        color:#fff;
+        margin:30px 0;
+    }
+
+    /* ======================
+       Footer スマホ
+    ====================== */
     .footer .site-menu ul{
         display:block;
         text-align:center;
@@ -202,10 +212,10 @@ img {
 
     .footer .site-menu li{
         margin-top:20px;
+    
     }
-
     .copyright{
         margin-top:50px;
+        text-align:center;
     }
-
 }
