@@ -1,26 +1,45 @@
 @charset "utf-8";
 
-nav.floating {
-    position: absolute;
-    top: 70px;
-    left: 50px;
-    background-color: #d0d0d0;
+/*メニューボタン*/
+.toggle-menu-button{
+    display:none;
 }
 
+nav.floating {
+    position: fixed;
+    top: 70px;
+    left: 50px;
+    background-color: #aa00cc;
+}
+
+/*利用上の注意ブロック*/
 .rules {
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
+
+    background-color: #b6fbacc1;
 }
+/*注意内容ブロック*/
 .lead {
+    text-align: center;
     background-color: #86ff8c;
     background-size: 400px 100px;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding-bottom: 30px;
+    
+    padding: 8px 16px;
+    margin: 60px auto;
+    /*margin-left: 150px;
+    margin-right: 150px;*/
+    width: fit-content;
+}
+/*「トップ」ボタン*/
+.top{
+    font-size: 50px;
 }
 
 *,
@@ -66,6 +85,28 @@ img {
     margin-bottom: 50px;
 }
 
+/* ヘッダー */
+.header-inner{
+    max-width:1200px;
+    height:110px;
+    margin:0 auto;
+    padding:0 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-logo{
+    display:block;
+    width:170px;
+}
+
+/*.header{
+    background-image: url('../images/rules/header.jpg');
+    background-size: cover;       /* 領域いっぱいに画像を引き伸ばす 
+    background-position: center;  /* 画像の中央を表示 
+    padding: 20px 0;
+}
 .header-inner {
     max-width: 1200px;
     height: 110px;
@@ -76,11 +117,15 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin: auto auto;
 }
 .header-logo {
     display: block;
-    width: 170px;
+    height: 110px;
 }
+*/
+
 
 .toggle-menu-button {
     display: none;
@@ -98,37 +143,94 @@ img {
 }
 
 
+@media (max-width: 800px) {
+    /* ハンバーガーボタン表示 */
+    .toggle-menu-button{
+        display:block;
+        position: fixed;
+        top:20px;
+        left:20px;
+        z-index:9999;
+        background-color:transparent;
+        border:none;
+        cursor:pointer;
+        padding:0;
+    }
+    /* ハンバーガー画像 */
+    .toggle-menu-button img{
+        background-image: url("../images/index/hamburger.png");
+        
+        width:50px;
+        height:auto;
+        display:block;
+    }
+    /* ハンバーガーメニュー本体 */
+    .header-site-menu{
+        position:fixed;
+        top:0;
+        left:-250px;
+        width:250px;
+        height:100%;
+        background:#222;
+        transition:0.3s;
+        z-index:1000;
+    }
+    /* 開いた状態 */
+    .header-site-menu.open{
+        left:0;
+    }
+    /* メニューリスト */
+    .site-menu ul{
+        list-style:none;
+        margin-top:100px;
+        padding:0;
+        display:block;
+    }
+    /* メニュー項目 */
+    .site-menu li{
+        padding:20px;
+    }
+    /* メニュー文字 */
+    .site-menu a{
+        color:white;
+        text-decoration:none;
+        font-size:20px;
+    }
+}
 
 @media (max-width: 800px) {
     .site-menu ul {
+        
         display: block;
         text-align: center;
     }
-
     .site-menu li {
         margin-top: 20px;
     }
 
+    .rules{
+        margin-top:100px;
+    }
+    
     .header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background-color: #ffffff;
-        height: 50px;
+        
+        min-height: 150px;
+
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
-
     .header-inner {
         padding-left: 20px;
         padding-right: 20px;
         height: 100%;
         position: relative;
     }
-
     .header-site-menu {
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 0;
         right: 0;
@@ -138,17 +240,16 @@ img {
         padding-bottom: 50px;
         display: none;
     }
-
     .header-site-menu.is-show {
         display: block;
     }
-
     .header-logo {
         width: 100px;
+        height: auto;
     }
 
     .main {
-        padding-top: 50px;;
+        padding-top: 50px;
     }
 
     .footer-logo {
