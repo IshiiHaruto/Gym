@@ -1,3 +1,4 @@
+/*ボタン押すと左から生えてくる*/
 document.addEventListener("DOMContentLoaded", function () {
 
     const button = document.querySelector(".toggle-menu-button");

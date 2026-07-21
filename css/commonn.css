@@ -1,0 +1,125 @@
+/* PCでは非表示 */
+.toggle-menu-button{
+    display:none;
+}
+
+
+/* スマホ表示 */
+@media (max-width:800px){
+
+    /* ハンバーガーボタン表示 */
+    .toggle-menu-button{
+        display:block;
+        position: fixed;
+        top:20px;
+        left:20px;
+        z-index:9999;
+        background-color:transparent;
+        border:none;
+        cursor:pointer;
+        padding:0;
+    }
+
+
+    /* ハンバーガー画像 */
+    .toggle-menu-button img{
+        width:50px;
+        height:auto;
+        display:block;
+    }
+
+
+    /* ハンバーガーメニュー本体 */
+    .header-site-menu{
+        position:fixed;
+        top:0;
+        left:-250px;
+        width:250px;
+        height:100%;
+        background:#222;
+        transition:0.3s;
+        z-index:1000;
+    }
+
+
+    /* 開いた状態 */
+    .header-site-menu.open{
+        left:0;
+    }
+
+
+    /* メニューリスト */
+    .site-menu ul{
+        list-style:none;
+        margin-top:100px;
+        padding:0;
+        display:block;
+    }
+
+
+    /* メニュー項目 */
+    .site-menu li{
+        padding:20px;
+    }
+
+
+    /* メニュー文字 */
+    .site-menu a{
+        color:white;
+        text-decoration:none;
+        font-size:20px;
+    }
+
+}
+
+/* footer */
+.footer {
+    color: #ffffff;
+    background-color: #24211b;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* footer内のメニュー */
+.footer .site-menu ul {
+    display: flex;
+}
+
+
+.footer .site-menu li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* コピーライト */
+.copyright {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+
+/* スマホ表示 */
+@media (max-width:800px){
+
+    .footer .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+
+    .footer .site-menu li {
+        margin-top:20px;
+    }
+
+
+    .copyright {
+        margin-top:50px;
+    }
+
+}
