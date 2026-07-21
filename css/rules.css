@@ -85,10 +85,26 @@ img {
     margin-bottom: 50px;
 }
 
-.header{
+/* ヘッダー */
+.header-inner{
+    max-width:1200px;
+    height:110px;
+    margin:0 auto;
+    padding:0 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-logo{
+    display:block;
+    width:170px;
+}
+
+/*.header{
     background-image: url('../images/rules/header.jpg');
-    background-size: cover;       /* 領域いっぱいに画像を引き伸ばす */
-    background-position: center;  /* 画像の中央を表示 */
+    background-size: cover;       /* 領域いっぱいに画像を引き伸ばす 
+    background-position: center;  /* 画像の中央を表示 
     padding: 20px 0;
 }
 .header-inner {
@@ -108,6 +124,8 @@ img {
     display: block;
     height: 110px;
 }
+*/
+
 
 .toggle-menu-button {
     display: none;
