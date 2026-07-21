@@ -14,39 +14,51 @@
     </head>
     <body>
 
-    <header class="header">
-        <div class="header-inner">
+<header class="header">
+    <div class="header-inner">
 
-            <!-- 左：ホーム（index.htmlでは消してもOK） -->
-            <nav class="header-left">
+        <!-- 左：ホーム（index.htmlでは消してもOK） -->
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+        </nav>
+
+        <!-- 中央：ロゴ -->
+        <h1 class="header-logo">
+            <a href="index.html">
+                <img src="./images/common/Meijo100.svg" alt="名城大学Gym">
+            </a>
+        </h1>
+
+        <!-- 右：PCメニュー -->
+        <nav class="header-right">
+            <ul>
+                <li><a href="rules.html">利用上の注意</a></li>
+                <li><a href="introduction.html">機器の紹介</a></li>
+                <li><a href="access.html">アクセス</a></li>
+            </ul>
+        </nav>
+
+        <!-- スマホ用ハンバーガー -->
+        <button class="toggle-menu-button">
+            <img src="./images/common/hamburger.png" alt="メニュー">
+        </button>
+
+        <!-- スマホ用メニュー -->
+        <div class="header-site-menu">
+            <nav class="site-menu">
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="rules.html">利用上の注意</a></li>
+                    <li><a href="introduction.html">機器の紹介</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+
                 </ul>
             </nav>
-    
-            <!-- 中央：ロゴ -->
-            <h1 class="header-logo">
-                <a href="index.html">
-                    <img src="./images/common/Meijo100.svg" alt="名城大学Gym">
-                </a>
-            </h1>
-
-            
-            <button class="toggle-menu-button">
-                <img src="./images/common/hamburger.png" alt="メニュー">
-            </button>
-            <div class="header-site-menu">
-                <!-- 右：PCメニュー -->
-                <nav class="site-menu">
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
-                        <li><a href="rules.html">利用上の注意</a></li>
-                        <li><a href="access.html">アクセス</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
-    </header>
+
+    </div>
+</header>
 
     <main class="main">
         <h1>使用可能な器具</h1>
@@ -67,13 +79,13 @@
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="introduction.html">設備紹介</a></li>
                     <li><a href="rules.html">利用上の注意</a></li>
                     <li><a href="access.html">アクセス</a></li>
                 </ul>
             </nav>
             <a class="footer-logo" href="index.html">
-                <img src="images/common/img_mark_lions.webp" alt="ロゴ">
+                <img src="./images/common/img_mark_lions.webp" alt="ロゴ">
             </a>
             <p class="copyright"><small>&copy;名城大学ライオンズアリーナ</small></p>
         </footer>
