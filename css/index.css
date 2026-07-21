@@ -1,6 +1,10 @@
 @charset "utf-8";
 
-/*画面の一番上の表示*/
+/* ==========================
+   ファーストビュー
+========================== */
+
+/* 画面の一番上の表示 */
 .first-view {
     height: calc(100vh - 110px);
     background-image: url(../images/index/logo.png);
@@ -11,7 +15,7 @@
     align-items: center;
 }
 
-/*画面の一番上のテキスト*/
+/* 画面の一番上のテキスト */
 .first-view-text {
     width: 100%;
     max-width: 1200px;
@@ -24,30 +28,34 @@
     text-shadow: 1px 1px 10px #ff5500;
 }
 
-/*画面の一番上のテキスト（でっかいの）*/
+/* 画面の一番上のテキスト（大きい文字） */
 .first-view-text h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 72px;
     line-height: 72px;
 }
 
-/*画面の一番上のテキスト（ちっさいの）*/
+/* 画面の一番上のテキスト（小さい文字） */
 .first-view-text p {
     font-size: 18px;
     margin-top: 20px;
 }
 
+/* リード文 */
 .lead {
     max-width: 1200px;
     margin: 60px auto;
 }
 
-/* リセット */
+/* ==========================
+   リセット
+========================== */
+
 *,
 ::before,
 ::after {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -64,82 +72,40 @@ a {
 body {
     font-family: sans-serif;
     font-size: 16pt;
-    color: #000000;
+    color: #000;
     line-height: 1;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 img {
     max-width: 100%;
 }
 
-/* ヘッダー */
-.header-inner {
-    max-width: 1200px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* ==========================
+   スマホ表示
+========================== */
 
-.header-logo {
-    display: block;
-    width: 170px;
-}
-
-.site-menu ul {
-    display: flex;
-}
-
-.site-menu ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
-}
-
-/* スマホ表示 */
 @media (max-width: 800px) {
 
-    .site-menu ul {
-        display: block;
-        text-align: center;
+    .first-view {
+        height: calc(100vh - 50px);
     }
 
-    .site-menu li {
-        margin-top: 20px;
+    .first-view-text {
+        padding: 0 20px 40px;
     }
 
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        height: 50px;
-        z-index: 10;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    .first-view-text h1 {
+        font-size: 42px;
+        line-height: 48px;
     }
 
-    .header-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        position: relative;
+    .first-view-text p {
+        font-size: 16px;
     }
 
-    .header-logo {
-        width: 100px;
-    }
-
-    .main {
-        padding-top: 50px;
+    .lead {
+        margin: 40px 20px;
     }
 
 }
