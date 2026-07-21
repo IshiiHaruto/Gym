@@ -6,10 +6,10 @@
 }
 
 nav.floating {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 50px;
-    background-color: #d0d0d0;
+    background-color: #aa00cc;
 }
 
 /*利用上の注意ブロック*/
@@ -23,7 +23,6 @@ nav.floating {
 
     background-color: #b6fbacc1;
 }
-
 /*注意内容ブロック*/
 .lead {
     text-align: center;
@@ -37,6 +36,10 @@ nav.floating {
     /*margin-left: 150px;
     margin-right: 150px;*/
     width: fit-content;
+}
+/*「トップ」ボタン*/
+.top{
+    font-size: 50px;
 }
 
 *,
