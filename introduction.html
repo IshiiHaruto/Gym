@@ -14,6 +14,7 @@
     </head>
     <body>
 
+    <!-- ヘッダー構造を index.html と完全に同一に統一 -->
     <header class="header">
         <div class="header-inner">
 
@@ -31,16 +32,26 @@
                 </a>
             </h1>
 
-            
+            <!-- 右：PCメニュー（★index.htmlと同じ header-right を使用★） -->
+            <nav class="header-right">
+                <ul>
+                    <li><a href="rules.html">利用上の注意</a></li>
+                    <li><a href="introduction.html">機器の紹介</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                </ul>
+            </nav>
+
+            <!-- スマホ用ハンバーガー -->
             <button class="toggle-menu-button">
                 <img src="./images/common/hamburger.png" alt="メニュー">
             </button>
+            
+            <!-- スマホ用メニュー -->
             <div class="header-site-menu">
-                <!-- 右：PCメニュー -->
                 <nav class="site-menu">
                     <ul>
-                        <li><a href="index.html">ホーム</a></li>
                         <li><a href="rules.html">利用上の注意</a></li>
+                        <li><a href="introduction.html">機器の紹介</a></li>
                         <li><a href="access.html">アクセス</a></li>
                     </ul>
                 </nav>
@@ -52,31 +63,37 @@
         <h1>使用可能な器具</h1>
         
         <div class="powers">
-<!--以下，体を持たないため，トレーニングを行えない人工知能君(涙)による説明-->
+            <!--以下，体を持たないため，トレーニングを行えない人工知能君(涙)による説明-->
             <h2>ダンベル</h2>
             <li>重力の意志を宿す聖遺物、ダンベル。この鉄塊を操り、己の限界を超克して肉体の神殿を再構築せんとする者よ、我が『鋼鉄の聖域（ジム）』へ集うが良い。ここには、汝を新たなる覚醒へと導く多様な重量と、試練の設備が揃っている。今こそ我らが門を叩き、己の中に眠る美しき鋼の肉体を呼び覚ますのだ。</li>
+            
             <h2>ベンチプレス</h2>
             <li>天を仰ぎ、己の上にそびえる重厚なる鉄柱を押し上げる儀式、ベンチプレス。大胸筋を鋼の盾へと鍛え上げ、不屈の意志を証明せんとする者よ、我が『鋼鉄の聖域（ジム）』へ集うが良い。最高峰のプレス台と重量が、汝の挑戦を待っている。今こそその身を横たえ、天を押し返す圧倒的な力を手に入れるのだ。</li>
+            
             <h2>フィットネスバイク</h2>
-            <li>静止せし鉄の駿馬に跨り、風なき荒野を疾駆する無限の試練、フィットネスバイク。絶え間なく車輪を回し、心臓の鼓動を限界まで高めて脂肪を焼き尽くさんと欲する者は、我が『鋼鉄の聖域（ジム）』へ集うが良い。ここには、汝の持久力を極限へと導く漆黒のペダルが待っている。今こそ跨り、終わりなき路の彼方へ突き進め。</li>
+            <li>静止せし鉄の駿馬に跨り、風なき荒野を疾駆する無限 of 試練、フィットネスバイク。絶え間なく車輪を回し、心臓の鼓動を限界まで高めて脂肪を焼き尽くさんと欲する者は、我が『鋼鉄の聖域（ジム）』へ集うが良い。ここには、汝の持久力を極限へと導く漆黒のペダルが待っている。今こそ跨り、終わりなき路の彼方へ突き進め。</li>
+            
             <h2>ランニングマシーン</h2>
             <li>背後へと流転する大地を穿ち、果てなき路をただ前へと疾駆する限界の試練、ランニングマシン。滾る血潮を呼び覚まし、己の脚力をもって時空を切り裂かんと欲する者は、我が『鋼鉄の聖域（ジム）』へ集うが良い。ここには、汝の心肺を極限へと鍛え上げる流動のロードが待っている。今こそ大地を蹴り、未来に向かって駆け抜けよ。</li>
         </div>
-            
     </main>
-        <footer class="footer">
-            <nav class="site-menu">
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="rules.html">利用上の注意</a></li>
-                    <li><a href="access.html">アクセス</a></li>
-                </ul>
-            </nav>
-            <a class="footer-logo" href="index.html">
-                <img src="images/common/img_mark_lions.webp" alt="ロゴ">
-            </a>
-            <p class="copyright"><small>&copy;名城大学ライオンズアリーナ</small></p>
-        </footer>
-    <script src="js/script.js"></script><!--追加-->
+
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="rules.html">利用上の注意</a></li>
+                <li><a href="introduction.html">機器の紹介</a></li>
+                <li><a href="access.html">アクセス</a></li>
+            </ul>
+            <h1 class="header-logo">
+                <a href="index.html">
+                <img src="./images/common/img_mark_lions.webp" alt="名城大学Gym">
+                </a>
+            </h1>
+        </nav>
+        <p class="copyright"><small>&copy;名城大学ライオンズアリーナ</small></p>
+    </footer>
+
+    <script src="js/script.js"></script>
     </body>
 </html>
