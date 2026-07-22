@@ -118,9 +118,21 @@ img {
 /* フッターメニュー */
 .footer .site-menu ul{
     display:flex;
+    justify-content:center;
 }
 .footer .site-menu li{
     margin:0 20px;
+}
+
+/* フッターロゴ */
+.footer .header-logo{
+    text-align:center;
+    margin-top:40px;
+}
+
+.footer .header-logo img{
+    width:150px;
+    height:auto;
 }
 
 /* コピーライト */
@@ -203,8 +215,9 @@ img {
     }
 
     /* ======================
-       Footer スマホ
+Footer スマホ
     ====================== */
+
     .footer .site-menu ul{
         display:block;
         text-align:center;
@@ -212,8 +225,16 @@ img {
 
     .footer .site-menu li{
         margin-top:20px;
-    
     }
+
+    .footer .header-logo{
+        margin-top:30px;
+    }
+
+    .footer .header-logo img{
+        width:120px;
+    }
+
     .copyright{
         margin-top:50px;
         text-align:center;
