@@ -18,10 +18,42 @@
     <header class="header">
         <div class="header-inner">
 
-            <!-- 左：ホーム（index.htmlでは消してもOK） -->
-            <nav class="header-left">
+        <!-- 左：ホーム -->
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+        </nav>
+
+        <!-- 中央：ロゴ -->
+        <h1 class="header-logo">
+            <a href="index.html">
+                <img src="./images/common/Meijo100.svg" alt="名城大学Gym">
+            </a>
+        </h1>
+
+        <!-- 右：PCメニュー -->
+        <nav class="header-right">
+            <ul>
+                <li><a href="rules.html">利用上の注意</a></li>
+                <li><a href="introduction.html">機器の紹介</a></li>
+                <li><a href="access.html">アクセス</a></li>
+            </ul>
+        </nav>
+
+        <!-- スマホ用ハンバーガー -->
+        <button class="toggle-menu-button">
+            <img src="./images/common/hamburger.png" alt="メニュー">
+        </button>
+
+        <!-- スマホ用メニュー -->
+        <div class="header-site-menu">
+            <nav class="site-menu">
                 <ul>
-                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="rules.html">利用上の注意</a></li>
+                    <li><a href="introduction.html">機器の紹介</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+
                 </ul>
             </nav>
     
@@ -57,7 +89,9 @@
                 </nav>
             </div>
         </div>
-    </header>
+
+    </div>
+</header>
 
     <main class="main">
         <h1>使用可能な器具</h1>
@@ -77,23 +111,19 @@
             <li>背後へと流転する大地を穿ち、果てなき路をただ前へと疾駆する限界の試練、ランニングマシン。滾る血潮を呼び覚まし、己の脚力をもって時空を切り裂かんと欲する者は、我が『鋼鉄の聖域（ジム）』へ集うが良い。ここには、汝の心肺を極限へと鍛え上げる流動のロードが待っている。今こそ大地を蹴り、未来に向かって駆け抜けよ。</li>
         </div>
     </main>
-
-    <footer class="footer">
-        <nav class="site-menu">
-            <ul>
-                <li><a href="rules.html">利用上の注意</a></li>
-                <li><a href="introduction.html">機器の紹介</a></li>
-                <li><a href="access.html">アクセス</a></li>
-            </ul>
-            <h1 class="header-logo">
-                <a href="index.html">
-                <img src="./images/common/img_mark_lions.webp" alt="名城大学Gym">
-                </a>
-            </h1>
-        </nav>
-        <p class="copyright"><small>&copy;名城大学ライオンズアリーナ</small></p>
-    </footer>
-
+        <footer class="footer">
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="rules.html">利用上の注意</a></li>
+                    <li><a href="introduction.html">機器の紹介</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                </ul>
+            </nav>
+            <a class="footer-logo" href="index.html">
+                <img src="./images/common/img_mark_lions.webp" alt="ロゴ">
+            </a>
+            <p class="copyright"><small>&copy;名城大学ライオンズアリーナ</small></p>
+        </footer>
     <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-/* ==========================
-    Reset
-========================== */
+/*リセット*/
 *,
 ::before,
 ::after {
@@ -32,9 +30,7 @@ img {
     max-width:100%;
 }
 
-/* ==========================
-   Header パソコン
-========================== */
+/*Header パソコン */
 
 /* ハンバーガー非表示 */
 .toggle-menu-button{
@@ -100,9 +96,7 @@ img {
     display:none;
 }
 
-/* ==========================
-    Footer パソコン
-========================== */
+/*Footer パソコン*/
 
 .footer{
     color:#fff;
@@ -114,13 +108,24 @@ img {
     align-items:center;
 }
 
-
 /* フッターメニュー */
 .footer .site-menu ul{
     display:flex;
+    justify-content:center;
 }
 .footer .site-menu li{
     margin:0 20px;
+}
+
+/* フッターロゴ */
+.footer .header-logo{
+    text-align:center;
+    margin-top:40px;
+}
+
+.footer .header-logo img{
+    width:150px;
+    height:auto;
 }
 
 /* コピーライト */
@@ -132,14 +137,10 @@ img {
 
 
 
-/* ===============
-    スマホ表示
-=============== */
+/*スマホ表示*/
 
 @media(max-width:800px){
-/* ===================
-    Header スマホ
-=================== */
+/*Header スマホ*/
 
     /* PCメニュー非表示 */
     .header-left,
@@ -147,10 +148,11 @@ img {
         display:none;
     }
 
-.header-logo{
-    width:150px;
-    margin:0 auto;
-}
+    /*中央のロゴ*/
+    .header-logo{
+        width:150px;
+        margin:0 auto;
+    }
     /* ハンバーガーボタン表示 */
     .toggle-menu-button{
         display:block;
@@ -184,7 +186,7 @@ img {
         z-index:9998;
     }
 
-    /* JSで追加されるクラス */
+    /* メニュー開く */
     .header-site-menu.open{
         left:0;
     }
@@ -196,15 +198,13 @@ img {
         text-align:center;
     }
 
-
     .header-site-menu .site-menu li{
         color:#fff;
         margin:30px 0;
     }
 
-    /* ======================
-       Footer スマホ
-    ====================== */
+/*Footer スマホ*/
+
     .footer .site-menu ul{
         display:block;
         text-align:center;
@@ -212,8 +212,16 @@ img {
 
     .footer .site-menu li{
         margin-top:20px;
-    
     }
+
+    .footer .header-logo{
+        margin-top:30px;
+    }
+
+    .footer .header-logo img{
+        width:120px;
+    }
+
     .copyright{
         margin-top:50px;
         text-align:center;
