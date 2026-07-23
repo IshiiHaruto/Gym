@@ -39,7 +39,7 @@ img {
 
 /* ヘッダー */
 .header-inner{
-    max-width:1200px;
+    max-width:1300px;
     height:110px;
     margin:0 auto;
     padding:0 40px;
@@ -148,11 +148,22 @@ img {
         display:none;
     }
 
+    .header-inner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        padding: 0 20px;
+    }
+
     /*中央のロゴ*/
     .header-logo{
-        width:150px;
-        margin:0 auto;
-    }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+    }   
     /* ハンバーガーボタン表示 */
     .toggle-menu-button{
         display:block;

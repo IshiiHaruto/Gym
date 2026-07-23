@@ -25,32 +25,3 @@
 .footer{
     margin-top: 50px;
 }
-
-/* ==========================================
-   スマホ表示 - 800px以下
-   ========================================== */
-@media (max-width: 800px) {
-
-    /* スマホ用ヘッダー
-       ※これらはcommon.cssに定義されていないため、このページでの上部固定レイアウト維持のために残しています */
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 50px;
-        background: #fff;
-        z-index: 2000;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
-    }
-
-    .header-inner {
-        position: relative;
-        height: 100%;
-        padding: 0 20px;
-    }
-
-    .main {
-        padding-top: 50px;
-    }
-}
