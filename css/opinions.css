@@ -1,8 +1,14 @@
 /*========================
 Main(メイン)
 ==========================*/
+.main{
+    background-color:tan;
+}
+
 .title{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    border-bottom: 3px solid;
+    width: fit-content;
 }
 
 .voices h1{
@@ -10,6 +16,6 @@ Main(メイン)
     margin-bottom: 50px;
 }
 
-.footer{
-    margin-top: 80px;
+.voices li{
+    padding-bottom: 30px;
 }
