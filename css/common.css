@@ -19,7 +19,7 @@ a {
 }
 
 body {
-    font-family:sans-serif;
+    font-family: "Zen Maru Gothic", sans-serif;
     font-size:16pt;
     color:#000;
     line-height:1;
@@ -86,10 +86,6 @@ img {
     margin-left:20px;
 }
 
-.header-left a,
-.header-right a{
-    font-family:'Cherry Bomb One', cursive;
-}
 
 /* PCではスマホメニュー非表示 */
 .header-site-menu{
@@ -119,12 +115,16 @@ img {
 
 /* フッターロゴ */
 .footer .header-logo{
-    text-align:center;
-    margin-top:40px;
+    width:150px;
+    margin:40px auto 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .footer .header-logo img{
-    width:150px;
+    display:block;
+    width:100%;
     height:auto;
 }
 
